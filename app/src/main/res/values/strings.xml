@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyPraking</string>
+    <string name="slot_one">Slotone</string>
+    <string name="slot_two">Slottwo</string>
+    <string name="slot_three">Slotthree</string>
+    <string name="placenumber">Placenumber</string>
+    <string name="brand">Brand</string>
+    <string name="user">User</string>
+    <string name="update">Update</string>
+    <string name="placenumber1">PlaceNumber1</string>
+</resources>
