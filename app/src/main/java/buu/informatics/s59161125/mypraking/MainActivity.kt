@@ -1,12 +1,9 @@
 package buu.informatics.s59161125.mypraking
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import kotlinx.android.synthetic.main.activity_main.*
-import android.util.Log
 
 class MainActivity : AppCompatActivity() {
     private val myParking: ArrayList<Slot> = ArrayList<Slot>()
@@ -14,7 +11,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.fragment_slot_car)
 
         for (i in 0..2) {
             myParking.add(i, Slot("", "", ""))

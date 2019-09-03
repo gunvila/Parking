@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/navigation"
+        app:startDestination="@id/loginmain">
+
+    <fragment
+            android:id="@+id/loginmain"
+            android:name="buu.informatics.s59161125.mypraking.Loginmain"
+            android:label="fragment_loginmain"
+            tools:layout="@layout/fragment_loginmain" >
+        <action
+                android:id="@+id/action_loginmain_to_slotCarAll"
+                app:destination="@id/slotCarAll" />
+    </fragment>
+    <fragment
+            android:id="@+id/slotCarAll"
+            android:name="buu.informatics.s59161125.mypraking.SlotCarAll"
+            android:label="fragment_slot_car_all"
+            tools:layout="@layout/fragment_slot_car_all" />
+</navigation>
