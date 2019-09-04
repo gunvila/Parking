@@ -11,7 +11,6 @@
     <string name="slotone">SlotOne</string>
     <string name="slottwo">SlotTwo</string>
     <string name="slotthree">Slotthree</string>
-    <string name="update">Update</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -24,4 +23,18 @@
     <string name="submit">submit</string>
     <string name="cancel_btn">cancel_btn</string>
     <string name="cancel">cancel</string>
+    <string name="Login">login</string>
+    <string name="Logintxt">Login</string>
+    <string name="usernametxt">Username</string>
+    <string name="password">Password</string>
+    <string name="submittxt">Submit</string>
+    <string name="canceltxt">cancel</string>
+    <string name="btn1">slotbtnone</string>
+    <string name="btn2">slotbtntwo</string>
+    <string name="btn3">slotbtnthree</string>
+    <string name="edit1txt">editnumber</string>
+    <string name="edit2txt">Brand</string>
+    <string name="edit3txt">NameDriver</string>
+    <string name="submit_btn">Submit</string>
+    <string name="cancelbtn">Cancel</string>
 </resources>

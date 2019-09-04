@@ -1,52 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".SlotCarAll">
+    tools:context= "buu.informatics.s59161125.mypraking.SlotCarAll">
+
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         <Button
-                android:id="@+id/button"
+                android:id="@+id/btn1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="38dp" />
+                android:layout_marginStart="16dp"
+                android:text="@string/btn1"
+                app:layout_constraintBaseline_toBaselineOf="@+id/btn2"
+                app:layout_constraintEnd_toStartOf="@+id/btn2"
+                app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-                android:id="@+id/button2"
+                android:id="@+id/btn2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button"
-                tools:layout_editor_absoluteX="141dp"
-                tools:layout_editor_absoluteY="38dp" />
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/btn2"
+                app:layout_constraintEnd_toStartOf="@+id/btn3"
+                app:layout_constraintStart_toEndOf="@+id/btn1"
+                app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-                android:id="@+id/button3"
+                android:id="@+id/btn3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button"
-                tools:layout_editor_absoluteX="291dp"
-                tools:layout_editor_absoluteY="41dp" />
+                android:layout_marginEnd="16dp"
+                android:text="@string/btn3"
+                app:layout_constraintBaseline_toBaselineOf="@+id/btn2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn2" />
 
         <Button
-                android:id="@+id/button4"
+                android:id="@+id/submitbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button"
-                tools:layout_editor_absoluteX="76dp"
-                tools:layout_editor_absoluteY="534dp" />
+                android:layout_marginStart="16dp"
+                android:text="@string/submit_btn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/cancelbtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
 
         <Button
-                android:id="@+id/button5"
+                android:id="@+id/cancelbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button"
-                tools:layout_editor_absoluteX="244dp"
-                tools:layout_editor_absoluteY="543dp" />
+                android:layout_marginEnd="16dp"
+                android:text="@string/cancelbtn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/submitbtn"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <EditText
+                android:id="@+id/carnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:fontFamily="@font/roboto_thin"
+                android:hint="@string/edit1txt"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/barnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn2" />
+
+        <EditText
+                android:id="@+id/barnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/roboto_thin"
+                android:hint="@string/edit2txt"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/carnumber" />
+
+        <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/roboto_thin"
+                android:hint="@string/edit3txt"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/submitbtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/barnd" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-</FrameLayout>
+</layout>
